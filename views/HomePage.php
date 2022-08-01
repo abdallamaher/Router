@@ -1,9 +1,11 @@
 <?php
 
+namespace Views;
+
 class HomePage
 {
   public function __invoke()
   {
-    echo "Hello from Home Page";
+    echo "<h1>Hello from Home Page</h1>";
   }
 }

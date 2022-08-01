@@ -1,5 +1,5 @@
 <?php
-
+namespace Src;
 class Router
 {
     private array $routes;
@@ -23,8 +23,9 @@ class Router
         foreach($this->routes as $path => $callback)
         {
             if($path !== $uri)continue;
-            //echo $callback;
+            
             if(is_string($callback)){
+                $callback = "Views\\" . $callback;
                 $object = new $callback();
                 $object();
             }

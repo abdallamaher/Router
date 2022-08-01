@@ -1,5 +1,6 @@
 <?php
 
+namespace Src;
 class App
 {
     private Router $router;
@@ -12,7 +13,7 @@ class App
 
     private function initRouting() : void
     {
-        $routes = require_once 'config/routes.php';
+        $routes = require_once 'routes/Web.php';
 
         $this->router = new Router($routes);
 

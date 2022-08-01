@@ -1,0 +1,16 @@
+{
+    "name": "abdallah/router",
+    "description": "Router for php requests",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Views\\": "views/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdallah Maher"
+        }
+    ],
+    "require": {}
+}

@@ -1,4 +1,4 @@
 <?php
-include_once 'autoload.php';
+include_once 'vendor/autoload.php';
 
-$app = (new App())->run();
+$app = (new Src\App())->run();
